@@ -1,4 +1,4 @@
-package org.example.gestion_de_stock.config;
+package org.example.gestion_de_stock.service;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
