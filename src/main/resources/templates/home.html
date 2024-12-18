@@ -224,6 +224,36 @@
             border-color: #007bff; /* Couleur de bordure au survol */
         }
 
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        .auth-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, background-color 0.3s;
+            font-size: 1rem;
+            color: #fff;
+        }
+
+        .auth-buttons .register-btn {
+            background-color: #28a745;
+        }
+
+        .auth-buttons .login-btn {
+            background-color: #007bff;
+        }
+
+        .auth-buttons a:hover {
+            transform: scale(1.1);
+            background-color: #555;
+        }
+
 
     </style>
 </head>
@@ -234,9 +264,11 @@
         <h1>Gestion de Stock</h1>
     </div>
     <nav>
+        <a href="/register" class="auth-link">Créer un compte</a>
+        <a href="/login" class="auth-link">Se connecter</a>
+        <br><br>
         <div class="button-container">
             <a href="/all/delivery/" class="home">Livraison</a>
-
             <a href="/all" class="cat">Category</a>
             <a href="/all/product/" class="products">Produits</a>
             <a href="/all/supplier/" class="suppliers">Fournisseurs</a>
